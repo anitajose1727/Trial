@@ -1,0 +1,18 @@
+.t1 {
+    font-size: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+
+.section {
+    margin: auto;
+    width: 50%;
+    border: 3px solid #303e1c;
+    padding: 10px;
+}
+.side{
+    margin: 50px;
+}

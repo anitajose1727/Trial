@@ -1,0 +1,98 @@
+<div class="section">
+
+    <table>
+        <tr class="card">
+            <td
+                style="border-left-style:solid;border-left-width:2pt;border-bottom-style:solid;border-bottom-width:2pt;border-top-style: solid;border-top-width:2pt ;border-right-style:solid;border-right-width:2pt;width: 100%;">
+                <h1>INDIAN INCOME TAX RETURN </h1>
+                <h1>2022-2023</h1>
+                <p class="t1">[For
+                    individuals being a resident (other than not ordinarily resident) having
+                    total income upto Rs.50 lakh, having Income from Salaries, one house property, other sources
+                    (Interest etc.), and agricultural income upto Rs.5 thousand]
+                    [Not for an individual who is either Director in a company or has invested in
+                    unlisted equity shares or in cases where TDS has been deducted u/s 194N or if income-tax is
+                    deferred
+                    on ESOP]
+                </p>
+                <p class="t1">(Refer instructions for eligibility)</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td
+                style="border-left-style:solid;border-left-width:1pt;border-bottom-style:solid;border-bottom-width:1pt;border-top-style: solid;border-top-width:1pt ;border-right-style:solid;border-right-width:1pt;width: 100%;">
+                <form [formGroup]="myForm" (ngSubmit)="dashboard()">
+                    <br>
+                    <div>
+                        <label for="exampleInputPassword1">Full Name</label>
+                        <input formControlName="fname" id="exampleInputPassword1" type="text" class="form-control"
+                            placeholder="Full Name" required>
+                        <span class="text-danger"
+                            *ngIf="myForm.controls['fname'].dirty && myForm.hasError('required','fname')">*Full
+                            name is required</span>
+                    </div>
+                    <div>
+                        <label for="exampleInputPassword1">Date of Birth</label>
+                        <input formControlName="dob" id="exampleInputPassword1" type="date" class="form-control"
+                            placeholder="Date of Birth" required>
+                        <span class="text-danger"
+                            *ngIf="myForm.controls['dob'].dirty && myForm.hasError('required','dob')">*Date of Birth is
+                            required</span>
+                    </div>
+                    <div>
+                        <label for="exampleInputPassword1">Aadhaar Number</label>
+                        <input formControlName="aadhaar" id="exampleInputPassword1" type="number" class="form-control"
+                            placeholder="Aadhaar Number" required>
+                        <span class="text-danger"
+                            *ngIf="myForm.controls['aadhaar'].dirty && myForm.hasError('required','aadhaar')">*Aadhaar
+                            is required</span>
+                    </div>
+                    <div>
+                        <label for="exampleInputPassword1">Email Id</label>
+                        <input formControlName="email" id="exampleInputPassword1" type="email" class="form-control"
+                            placeholder="Email Id" required>
+                        <span class="text-danger"
+                            *ngIf="myForm.controls['email'].dirty && myForm.hasError('required','email')">*Email Id is
+                            required</span>
+                    </div>
+                    <div>
+                        <label for="exampleInputPassword1">Mobile Number</label>
+                        <input formControlName="mobile" id="exampleInputPassword1" type="number" class="form-control"
+                            placeholder="Mobile Number" required />
+                        <span class="text-danger"
+                            *ngIf="myForm.controls['mobile'].dirty && myForm.hasError('required','mobile')">*Mobile
+                            number is required</span>
+                    </div>
+
+                    <div>
+                        <label for="exampleInputPassword1">State</label>
+                        <input formControlName="state" id="exampleInputPassword1" type="text" class="form-control"
+                            placeholder="State" required>
+                    </div>
+                    <div>
+                        <label for="exampleInputPassword1">City</label>
+                        <input formControlName="city" id="exampleInputPassword1" type="text" class="form-control"
+                            placeholder="City" required>
+                    </div>
+                    <div>
+                        <label for="exampleInputPassword1">Pincode</label>
+                        <input formControlName="pin" id="exampleInputPassword1" type="number" class="form-control"
+                            placeholder="Pin Code" required>
+                    </div><br>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                                Agree to terms and conditions
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary ">Submit</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+</div>
